@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="'IE-edge"/> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <title>STATUE OF UNITY</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">STATUE OF UNITY</a></div>
+                <ul class="links">
+                    <li><a href="ABOUT">ABOUT</a></li>
+                    <li><a href="SARDAR VALLABHBHAI PATEL">SARDAR VALLABHBHAI PATEL</a></li>
+                    <li><a href="BOOK TICKETS">BOOK TICKETS</a></li>
+                    <li><a href="FEEDBAECK">FEEDBAECK</a></li>
+                </ul>
+                <a href="#" class="action_btn">WELCOME</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars">❤️</i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="ABOUT">ABOUT</a></li>
+                    <li><a href="SARDAR VALLABHBHAI PATEL">SARDAR VALLABHBHAI PATEL</a></li>
+                    <li><a href="BOOK TICKETS">BOOK TICKETS</a></li>
+                    <li><a href="FEEDBAECK">FEEDBAECK</a></li>
+                    <li><a href="#" class="action_btn">WELCOME</a></li>
+            </div>
+            <div class="slider">
+                <figure>
+                    <div class="slider">
+                        <img src="asesst/1200px-Statue_of_Unity.jpg" alt="">
+                    </div>
+                    <div class="slider">
+                        <img src="asesst/statue-of-unity-1.jpg" alt="">
+                    </div>
+                    <div class="slider">
+                        <img src="asesst/Statue-of-Unity-during-a-laser-show.jpg" alt="">
+                    </div>
+                    <div class="slider">
+                        <img src="asesst/statue_of_unity_sardar_patel-U205730969126CB--621x414@LiveMint.jpg" alt="">
+                    </div>
+                </figure>
+            </div>
+        </header>
+        <main>
+        </main>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function(){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-bars'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+    </body>
+</html>
+
